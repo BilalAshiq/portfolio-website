@@ -42,11 +42,11 @@ a:hover, a:visited, a:active {
 	width: 0ch;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-top: 2rem;
 	color: black;
 	text-orientation: upright;
-	animation: text 10s steps(27)  infinite, caret .8s infinite;
+	animation: text 10s steps(20)  infinite, caret .8s infinite;
 }
 
 @keyframes text{
@@ -55,7 +55,7 @@ a:hover, a:visited, a:active {
 
 	}
 	50%{
-		width: 27ch;
+		width: 20ch;
 	}
 	100%{
 		width: 0ch;
@@ -299,6 +299,7 @@ li {
 
 .label {
 	color: white;
+        font-size: 1.5rem;
 }
 
 .footer {
@@ -307,5 +308,6 @@ li {
 	display: flex;
 	justify-content: center;
 	color: white;
-	font-family: calibri;	
+	font-family: calibri;
+        font-size: 15px;	
 }
