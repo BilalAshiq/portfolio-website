@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Abrar - Portfolio
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="icon" type="x-type/image" href="assets/imgs/favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="stuff/fontawesome/css/all.min.css">
+
+</head>
+<body>
+
+
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+	    <div class="container-fluid">
+		    <a class="navbar-brand" href="#">
+		    	<img class="logo" src="assets/imgs/favicon.jpg">
+		    	
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbar">
+		        <ul class="navbar-nav ml-auto">
+			        <li class="nav-item">
+			            <a class="nav-link" href="index.html">
+			            	<i class="fas fa-home"></i>	Home
+			        	</a>
+			        </li>
+			        <li class="nav-item">
+			            <a class="nav-link" href="#skill">
+			            	<i class="fas fa-laptop"></i> Skills
+			        	</a>
+			        </li>
+			        <li class="nav-item">
+			            <a class="nav-link" href="#projects">
+			            	<i class="fas fa-briefcase"></i> Projects
+			        	</a>
+			        </li>
+			         <li class="nav-item">
+			            <a class="nav-link" href="#contact">
+			            	<i class="fas fa-address-book"></i> Contact
+			        	</a>
+			        </li>
+		        </ul>
+		    </div>
+	    </div>
+	</nav>
+
+	<!-- Header -->
+		<div class="header">
+			<h2 class="head">Abrar War</h2>
+		<div class="icons">
+				<i class="fab fa-github" id="icons"></i>
+				<i class="fab fa-facebook" id="icons"></i>
+				<i class="fab fa-instagram" id="icons"></i>
+				<i class="fab fa-twitter" id="icons"></i>
+			</div>
+				<div class="tags-container">
+					<p class="tags">Web Developer, Coder, Student</p>
+				</div>
+				<p class="about">Hi There! My Name is Abrar. I study in class 10 in SRM Welkin. Take a look around and let me know how it looks.<br/> <span> Ciao!</span></p>
+		</div>
+	<!-- Skills -->
+	<div id="skill">
+		<div class="skill-container">
+					<h2 class="skill-head"><i class="fas fa-laptop"></i> Skills</h2>
+			<div class="progress-container">
+							<h3 class="progress-head">Progress</h3>
+				<div class="bar-container">
+					<li>
+						<h3 class="label">HTML5</h3><span class="bar"><span class="html"></span></span>
+					</li>
+
+					<li>
+						<h3 class="label">CSS3</h3><span class="bar"><span class="css"></span></span>
+					</li>
+
+					<li>
+					<h3 class="label">Bootstrap</h3><span class="bar"><span class="bs"></span></span>
+					</li>
+
+					<li>
+						<h3 class="label">JavaScript</h3><span class="bar"><span class="js"></span></span>
+					</li>
+
+					<li>
+						<h3 class="label">jQuery</h3><span class="bar"><span class="jq"></span></span>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Projects -->
+	<section id="projects">
+		<div class="project-container">
+			<h2 class="project-head"><i class="fas fa-book"></i> Projects</h2>
+				<div class="img-container">
+					<div class="calculator">
+							<h4 class="calculator-head"><i class="fas fa-calculator"></i> Calculator</h4>
+							<img src="assets/imgs/7.jpeg" class="calculator-image">
+						</div>
+						<div class="quiz">
+							<h4 class="quiz-head"><i class="fas fa-code"></i> Quiz Master</h4>
+							<img src="assets/imgs/1.png" class="quiz-image">
+						</div>
+					</div>
+				</div>
+	</section>
+	<!-- Contact -->
+	<section id="contact">
+		<div class="contact-container">
+			<h2 class="contact-head"><i class="fas fa-address-book"></i> Contact</h2>
+				<div class="form-container">
+					<form class="form">
+						<fieldset class="form-group">
+							<label class="label"><i class="fas fa-address-card"></i> Name</label><br><br>
+							<input type="text" placeholder="Enter Name">
+						</fieldset>
+
+						<fieldset class="form-group">
+							<label class="label"><i class="fas fa-envelope"></i> Email</label><br><br>
+							<input type="email" placeholder="Enter Email">
+						</fieldset>
+
+						<fieldset class="form-group">
+							<label class="label"><i class="fas fa-comment-dots"></i> Message</label><br><br>
+							<textarea type="text" placeholder="Enter Message"></textarea>
+						</fieldset>
+						<button class="btn btn-primary" id="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+					</form>
+				</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer class="footer">
+		<h4 class="foot">&copy; &nbsp; Abrar War | 2022</h4>
+	</footer>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/de41999cf3.js"></script>
+	<script>
+		$(document).ready(() =>{
+			$('#send-btn').click((e) =>{
+				e.preventDefault();
+			})
+		});
+	</script>
+
+</body>
+</html>
